@@ -1,15 +1,15 @@
 CC = gcc -ggdb3 
-
+ 
 CCC = g++ -ggdb3 
 
-OBJS = main.o
+OBJS = main.o ArrayDataManager.o
 
-SRC = main.c
+SRC = main.cpp ArrayDataManager.cpp
 
 all : locate.out
 
 locate.out : $(SRC)
-	$(CC) -O2 -Wall -o $@ $^ -lrt -lpthread
+	$(CCC) -O2 -Wall -o $@ $^ -lrt -lpthread
 
 #%.o: %.c
 #	$(CC) -O2 -c $< -lrt -lpthread
