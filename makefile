@@ -1,10 +1,10 @@
 CC = gcc -ggdb3 
- 
+
 CCC = g++ -ggdb3 
 
-OBJS = main.o ArrayDataManager.o
+OBJS = main.o ArrayDataManager.o pathhandle.o ArrayDataManagerSata.o
 
-SRC = main.cpp ArrayDataManager.cpp
+SRC = main.cpp ArrayDataManager.cpp pathhandle.cpp ArrayDataManagerSata.cpp
 
 all : locate.out
 
